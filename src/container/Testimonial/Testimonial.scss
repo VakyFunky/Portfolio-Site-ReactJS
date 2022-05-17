@@ -1,0 +1,115 @@
+.app__testimonial{
+    width: 100%;
+    height: 100%;
+}
+
+.app__testimonial-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10vh 5vh 13vh;
+
+    .app__testimonial-item {
+        width: 60%;
+        padding: 40px;
+
+        display: flex;
+        flex-direction: row;
+
+        border: 1px solid var(--lightGray-color);
+
+        
+
+        .app__testimonial-content {
+            padding: 0 40px;
+
+            p {
+                font-size: 1.1rem;
+                line-height: 2.1rem;
+                font-style: oblique;
+                color: var(--primary-color);
+                margin-bottom: 2rem;
+            }
+
+            .app__testimonial-author {
+                display: flex;
+                align-items: center;
+                
+            }
+            @media screen and (max-width: 980px) {
+               padding: 0;
+            }
+        }
+        @media screen and (max-width: 1400px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 980px) {
+            width: 100%;
+        }
+    }
+
+    .app__testimonial-btns {
+        display: flex;
+        margin-top: 40px;
+
+        div {
+            width: 36px;
+            height: 36px;
+
+            border-radius: 50%;
+            border: 1.5px solid var(--lightGray-color);
+
+            margin: 10px;
+
+            cursor: pointer;
+
+            svg {
+                color: var(--gray-color);
+            }
+
+            &:hover {
+                background-color: var(--secondary-color);
+
+                svg {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        padding: 10vh 0 5vh;
+    }
+
+    @media screen and (max-width: 980px) {
+        padding: 8vh 0 8vh;
+    }
+}
+
+.app__testimonial-brands {
+    width: 80%;
+
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-height: 50px;
+        max-width: 100px;
+        margin: 20px 40px;
+        opacity: .7;
+
+        @media screen and (max-width: 575px) {
+            max-height: 30px;
+        max-width: 90px;
+            margin: 20px;
+        }
+    }
+}
